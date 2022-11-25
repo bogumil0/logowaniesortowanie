@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LogowanieSortowanie.Model;
 
 namespace LogowanieSortowanie
 {
@@ -20,9 +21,28 @@ namespace LogowanieSortowanie
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnSubmit_OnClick(object sender, RoutedEventArgs e)
+        {
+            var loginValidator = new LoginValidator(new UserModel { Login = login.Text, Password = password.Password });
+
+            if (loginValidator.Validate())
+            {
+                var windowSorting = new WindowSorting();
+                windowSorting.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid login or password");
+            }
+
         }
     }
 }
