@@ -5,8 +5,8 @@ namespace LogowanieSortowanie
 {
     class LoginValidator
     {
-        private UserModel _userModel;
-        private UserModel[] _users = new UserModel[]
+        private readonly UserModel _userModel;
+        private readonly UserModel[] _users = new UserModel[]
         {
             new UserModel { Login = "admin", Password = "admin" },
             new UserModel { Login = "user", Password = "user" },
