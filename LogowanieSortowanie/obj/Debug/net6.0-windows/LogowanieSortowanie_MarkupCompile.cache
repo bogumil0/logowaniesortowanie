@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\oktik\Source\Repos\logowaniesortowanie\LogowanieSortowanie\obj\Debug\net6.0-windows\
+C:\Users\micha\source\repos\sort\LogowanieSortowanie\obj\Debug\net6.0-windows\
 LogowanieSortowanie
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\oktik\Source\Repos\logowaniesortowanie\LogowanieSortowanie\App.xaml
+C:\Users\micha\source\repos\sort\LogowanieSortowanie\App.xaml
 2-1966493311
 
 41559510472
-194-97651837
+194-164764702
 MainWindow.xaml;WindowSorting.xaml;
 
-False
+True
 
