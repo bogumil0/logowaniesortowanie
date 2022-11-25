@@ -40,7 +40,7 @@ namespace LogowanieSortowanie
             }
             else
             {
-                MessageBox.Show("Invalid login or password");
+                MessageBox.Show("Nieporawny login lub hasło");
             }
 
         }
