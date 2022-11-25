@@ -30,7 +30,7 @@ namespace LogowanieSortowanie
 
         private void BtnSubmit_OnClick(object sender, RoutedEventArgs e)
         {
-            var loginValidator = new LoginValidator(new UserModel { Login = login.Text, Password = password.Password.ToString() });
+            var loginValidator = new LoginValidator(new UserModel { Login = login.Text, Password = password.Password });
 
             if (loginValidator.Validate())
             {
